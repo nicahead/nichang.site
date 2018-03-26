@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>NIC|SITE</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<!--引入css-->
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css" />
+		<link rel="stylesheet" href="css/jquery.eeyellow.Timeline.css" />
+
+		<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<!--加载页-->
+		<div id="loading">
+			<div class="pic">
+				<span></span>
+			</div>
+		</div>
+		<!--音乐-->
+		<div id="music_box">
+			<audio id="music" src="http://ovnsuusbi.bkt.clouddn.com/%E5%86%8D%E8%B0%88%E8%AE%B0%E5%BF%86.mp3" autoplay="autoplay" loop>你的浏览器不支持audio标签。</audio>
+			<a id="audio_btn"><img src="img/play.png" width="40" height="40" id="music_btn" border="0"></a>
+		</div>
+		<!--左上菜单-->
+		<!--按钮 -->
+		<div id="menu">
+			<div class="toggle">
+				<div class="toggle_body">
+					<div class="bars bars_1"></div>
+					<div class="bars bars_2"></div>
+					<div class="bars bars_3"></div>
+					<div class="bars bars_4"></div>
+					<div class="bars bars_5"></div>
+					<div class="bars bars_6"></div>
+					<div class="bars bars_7"></div>
+					<div class="bars bars_8"></div>
+					<div class="bars bars_9"></div>
+				</div>
+			</div>
+		</div>
+		<!--菜单内容面板-->
+		<nav>
+			<div id="panel">
+				<ul>
+					<li class="panel-1">
+						<a href="#">
+							<div class="front">
+								<img src="img/home.png" width="72px" height="72px" />
+							</div>
+							<div class="back">
+								<div class="wrap">
+									<h3>Home</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="panel-2">
+						<a href="#">
+							<div class="front">
+								<img src="img/blog.png" width="72px" height="72px" />
+							</div>
+							<div class="back">
+								<div class="wrap">
+									<h3>Blog</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="panel-3">
+						<a href="#">
+							<div class="front">
+								<img src="img/album.png" width="72px" height="72px" />
+							</div>
+							<div class="back">
+								<div class="wrap">
+									<h3>Album</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="panel-4">
+						<a href="#">
+							<div class="front">
+								<img src="img/about.png" width="72px" height="72px" />
+							</div>
+							<div class="back">
+								<div class="wrap">
+									<h3>About</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="panel-5">
+						<a href="" target="_blank">
+							<div class="front">
+								<img src="img/contact.png" width="72px" height="72px" />
+							</div>
+							<div class="back">
+								<div class="wrap">
+									<h3>Contact</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="panel-6">
+						<a href="" target="_blank">
+							<div class="front">
+								<img src="img/CN_csdn.net.png" width="72px" height="72px" />
+							</div>
+							<div class="back">
+								<div class="wrap">
+									<h3>CSDN</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="panel-7">
+						<a href="" target="_blank">
+							<div class="front">
+								<img src="img/github2.png" width="72px" height="72px" />
+							</div>
+							<div class="back">
+								<div class="wrap">
+									<h3>GitHub</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="panel-8">
+						<a href="" target="_blank">
+							<div class="front">
+								<img src="img/wordpress.png" width="72px" height="72px" />
+							</div>
+							<div class="back">
+								<div class="wrap">
+									<h3>Wordpress</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="panel-9">
+						<a href="" target="_blank">
+							<div class="front">
+								<img src="img/server.png" width="72px" height="72px" />
+							</div>
+							<div class="back">
+								<div class="wrap">
+									<h3>Server</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div id="mask"></div>
+			</div>
+		</nav>
+		<!--右侧导航-->
+		<div id="right_nav">
+			<ul>
+				<li>
+					<a href="#home" class="current">N</a>
+				</li>
+				<li>
+					<a href="#welcome">I</a>
+				</li>
+				<li>
+					<a href="#about">C</a>
+				</li>
+				<li>
+					<a href="#skill">H</a>
+				</li>
+				<li>
+					<a href="#experience">A</a>
+				</li>
+				<li>
+					<a href="#blog">N</a>
+				</li>
+				<li>
+					<a href="#contact">G</a>
+				</li>
+			</ul>
+		</div>
+		<div id="content">
+			<!--home-->
+			<div id="home" class="module">
+				<div class="caption">
+					<h6>Professional / Positive / Creativty</h6>
+					<h1>GET <span>BETTER</span></h1>
+					<a class="btn btn-transparent" href="#welcome">Learn More</a>
+					<a class="btn btn-light" href="#">View Blog</a>
+				</div>
+			</div>
+			<!--welcome-->
+			<div id="welcome" class="module">
+				<div class="container">
+					<h2>WELCOME TO <span>NICHANG.SITE</span></h2>
+					<div class="seq"></div>
+					<span class="typed"></span>
+					<br /><br /><br />
+				</div>
+			</div>
+			<!--about-->
+			<div id="about" class="module">
+				<div class="col-md-6 col-xs-12" style="padding: 0;">
+					<div class="bg-about"></div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="carousel-content">
+							<ul class="carousel">
+								<li>
+									<div class="wrap-about">
+										<p class="head-about">When you are old and grey and full of sleep <br /> And nodding by the fire，take down this book <br /> And slowly read, and dream of the soft look <br /> Your eyes had once, and of their shadows deep <br /> How many loved your moments of glad grace <br /> And loved your beauty with love false or true <br /> But one man loved the pilgrim Soul in you <br /> And loved the sorrows of your changing face <br /> And bending down beside the glowing bars<br /> Murmur, a little sadly, how Love fled <br /> And paced upon the mountains overhead <br /> And hid his face amid a crowd of stars
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="wrap-about">
+										<table>
+											<tr>
+												<td class="title">Name </td>
+												<td class="break">:</td>
+												<td> 倪畅</td>
+											</tr>
+											<tr>
+												<td class="title">Sex</td>
+												<td class="break">:</td>
+												<td> ♂</td>
+											</tr>
+											<tr>
+												<td class="title">Date&nbsp;of&nbsp;birth</td>
+												<td class="break">:</td>
+												<td>97/07/28</td>
+											</tr>
+											<tr>
+												<td class="title">Job </td>
+												<td class="break">:</td>
+												<td> 学生</td>
+											</tr>
+											<tr>
+												<td class="title">School </td>
+												<td class="break">:</td>
+												<td> YTU</td>
+											</tr>
+											<tr>
+												<td class="title">Email </td>
+												<td class="break">:</td>
+												<td> nicahead@gmail.com</td>
+											</tr>
+											<tr>
+												<td class="title">Address </td>
+												<td class="break">:</td>
+												<td> 山东&nbsp;滕州</td>
+											</tr>
+											<tr>
+												<td class="title">Other </td>
+												<td class="break">:</td>
+												<td>
+													<a href="http://blog.csdn.net/qq_34838643" target="_blank"><img src="img/csdn.png" title="CSDN" /></a>&nbsp;
+													<a href="#" target="_blank"><img src="img/GitHub.png" title="GitHub"></a>&nbsp;
+													<a href="https://weibo.com/5732753761/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank"><img src="img/weibo.png" title="新浪微博"></a>&nbsp;
+													<a href="https://www.zhihu.com/people/sing-you/activities" target="_blank"><img src="img/zhihu.png" title="知乎"></a>&nbsp;
+													<a href="http://music.163.com/#/user/home?id=118034200" target="_blank"><img src="img/netease.png" title="网易云音乐"></a>&nbsp;
+													<a href="http://tieba.baidu.com/home/main?un=%E4%B8%AD%E5%9B%BD%E5%A5%BD%E9%9D%92%E5%B9%B41997&fr=home" target="_blank"><img src="img/tieba.png" title="百度贴吧"></a>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</li>
+							</ul>
+							<ul class="img-index"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--skill-->
+			<div id="skill" class="module">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<h3>Skills</h3>
+							<p class="content-detail">理解计算机体系结构及工作原理，熟练使用Java和C，熟悉HTML/CSS/JavaScript等前端语言，熟悉sql，python，JSP/Servlert，汇编语言，了解Django框架及opencv图像处理</p>
+						</div>
+						<div class="col-md-9">
+							<div class="skillst">
+								<div class="skillbar" data-percent="78%">
+									<div class="title head-sm">
+										HTML/CSS
+									</div>
+									<div class="count-bar">
+										<div class="count"></div>
+									</div>
+								</div>
+								<div class="skillbar" data-percent="91%">
+									<div class="title head-sm">
+										Java
+									</div>
+									<div class="count-bar">
+										<div class="count"></div>
+									</div>
+								</div>
+								<div class="skillbar" data-percent="58%">
+									<div class="title head-sm">
+										JavaScript
+									</div>
+									<div class="count-bar">
+										<div class="count"></div>
+									</div>
+								</div>
+								<div class="skillbar" data-percent="63%">
+									<div class="title head-sm">
+										python
+									</div>
+									<div class="count-bar">
+										<div class="count"></div>
+									</div>
+								</div>
+								<div class="skillbar" data-percent="95%">
+									<div class="title head-sm">
+										计算机体系结构
+									</div>
+									<div class="count-bar">
+										<div class="count"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--experience-->
+			<div id="experience" class="module">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<h3>
+                  <span>Experience</span>
+                </h3>
+							<p class="content-detail">
+								生命中真正重要的不是你遭遇了什么，而是你记住了哪些事，又是如何铭记的。
+							</p>
+						</div>
+						<div class="col-md-9 content-left">
+							<div class="col-md-12">
+								<div class="VivaTimeline">
+									<dl>
+										<dd class="pos-right clearfix">
+											<div class="circ"></div>
+											<div class="time">2015/09/01</div>
+											<div class="events">
+												<div class="events-body">
+													<div class="row">
+														<div class="events-desc">
+															进入烟台大学计算机学院读书，经历ing
+														</div>
+													</div>
+												</div>
+											</div>
+										</dd>
+										<dd class="pos-left clearfix">
+											<div class="circ"></div>
+											<div class="time">2012/09/01</div>
+											<div class="events">
+												<!--<div class="events-header">Event Heading</div>-->
+												<div class="events-body">
+													<div class="row">
+														<div class="events-desc">
+															进入滕州一中读高中，浮躁的三年
+														</div>
+													</div>
+												</div>
+											</div>
+										</dd>
+										<dd class="pos-right clearfix">
+											<div class="circ"></div>
+											<div class="time">2009/09/01</div>
+											<div class="events">
+												<div class="events-body">
+													<div class="row">
+														<div class="events-desc">
+															进入尚贤中学读初中，人生学习成绩巅峰
+														</div>
+													</div>
+												</div>
+											</div>
+										</dd>
+										<dd class="pos-left clearfix">
+											<div class="circ"></div>
+											<div class="time">2003/09/01</div>
+											<div class="events">
+												<!--<div class="events-header">Event Heading</div>-->
+												<div class="events-body">
+													<div class="row">
+														<div class="events-desc">
+															一入学校深似海，从此假期是路人。从此，洪林小学多了一个优秀的小学生。
+														</div>
+													</div>
+												</div>
+											</div>
+										</dd>
+										<dd class="pos-right clearfix">
+											<div class="circ"></div>
+											<div class="time">2001/09/01</div>
+											<div class="events">
+												<div class="events-body">
+													<div class="row">
+														<div class="events-desc">
+															优秀的少年在幼儿园就表现出非凡的实力
+														</div>
+													</div>
+												</div>
+											</div>
+										</dd>
+										<dd class="pos-left clearfix">
+											<div class="circ"></div>
+											<div class="time">1997/07/28</div>
+											<div class="events">
+												<!--<div class="events-header">Event Heading</div>-->
+												<div class="events-body">
+													<div class="row">
+														<div class="events-desc">
+															小旱三月，突遇大雨，伴随着雨水，一个帅气的男人出生了
+														</div>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--blog-->
+			<div id="blog" class="module">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<h3>
+                  <span>Blog</span>
+                </h3>
+							<p class="content-detail">
+								博客包括技术笔记，各种资源（安卓，pc等），代码（比较low的课程设计~~），
+								<a href="#">前往博客首页</a>
+							</p>
+						</div>
+						<div class="col-md-9 content-left">
+							<a href="#">
+								<div class="col-md-4 .col-sm-6 .col-xs-12">
+									<div class="card color-green">
+										<div class="card-wrap">
+											<img src="img/note.png" />
+											<h3>note</h3>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#">
+								<div class="col-md-4 .col-sm-6 .col-xs-12">
+									<div class="card color-blue">
+										<div class="card-wrap">
+											<img src="img/app.png" />
+											<h3>source</h3>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#">
+								<div class="col-md-4 .col-sm-6 .col-xs-12">
+									<div class="card color-gray">
+										<div class="card-wrap">
+											<img src="img/code.png" />
+											<h3>work</h3>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--contact-->
+			<div id="contact" class="module">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<h3>
+                  <span>Contact</span>
+                </h3>
+							<p class="content-detail">
+								您可以在这里留言，与我交流，留言内容将显示在
+								<a href="">这里</a>，并同步发送到我的邮箱。如果您不想发表公开的评论，也可以发送邮件到nicahead@gmail.com。
+							</p>
+
+						</div>
+						<div class="col-md-9 content-right">
+						    <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+							<form action="" target="nm_iframe">
+								<div class="group">
+									<input required="" type="text"><span class="highlight"></span><span class="bar"></span><label>您的昵称(必填)</label>
+								</div>
+								<div class="group">
+									<input required="" type="email"><span class="highlight"></span><span class="bar"></span><label>您的邮箱(必填)</label>
+								</div>
+								<div class="group">
+									<textarea required=""></textarea><span class="highlight"></span><span class="bar"></span><label>留言内容(必填)</label>
+								</div>
+								<div class="group">
+									<input type="email"><span class="highlight"></span><span class="bar"></span><label>您的个人网站网址(选填)</label>
+								</div>
+								<input id="sendMessage" name="sendMessage" type="submit" value="Send Message">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<h1>nichang.site</h1>
+				<h6>本站部分内容来自互联网，如有侵权请联系站长删除！</h6>
+				<h6><a>鲁公网安备xxxxxxxxxxx号</a></h6>
+			</div>
+		</footer>
+		<!--引入js-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/jquery.appear.js"></script>
+		<script type="text/javascript" src="js/carousel.js"></script>
+		<script type="text/javascript" src="js/typed.js"></script>
+		<script type="text/javascript" src="js/jquery.eeyellow.Timeline.js"></script>
+	</body>
+
+</html>
